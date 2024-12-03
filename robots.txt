@@ -1,0 +1,22 @@
+# Autoriser Googlebot à tout indexer
+User-agent: Googlebot
+Allow: /
+
+# Bloquer Bingbot de tout le site
+User-agent: Bingbot
+Disallow: /
+
+# Bloquer AhrefsBot (bot d'analyse SEO)
+User-agent: AhrefsBot
+Disallow: /
+
+# Bloquer le dossier temporaire pour tous les robots
+User-agent: *
+Disallow: /temp/
+
+# Laisser tous les autres robots explorer le reste du site
+User-agent: *
+Allow: /
+
+# Lien vers le sitemap XML
+Sitemap: https://almenuiserie.be/sitemap.xml
