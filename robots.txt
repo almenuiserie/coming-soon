@@ -2,14 +2,6 @@
 User-agent: Googlebot
 Allow: /
 
-# Bloquer Bingbot de tout le site
-User-agent: Bingbot
-Disallow: /
-
-# Bloquer AhrefsBot (bot d'analyse SEO)
-User-agent: AhrefsBot
-Disallow: /
-
 # Bloquer le dossier temporaire pour tous les robots
 User-agent: *
 Disallow: /temp/
