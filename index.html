@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL Menuiserie Générale - Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    header img {
+      max-width: 120px;
+      height: auto;
+    }
+    main {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    main h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      color: #555;
+      line-height: 1.4;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #e8e8ee;
+      font-size: 0.9rem;
+    }
+    footer .phone {
+      order: 1; /* Ordre fixe pour PC */
+      text-align: left;
+      flex: 1;
+    }
+    footer .copyright {
+      order: 2; /* Ordre fixe pour PC */
+      text-align: center;
+      flex: 1;
+      font-size: 0.8rem;
+      color: #666;
+    }
+    footer .email {
+      order: 3; /* Ordre fixe pour PC */
+      text-align: right;
+      flex: 1;
+    }
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+      footer {
+        flex-direction: column; /* Les éléments se placent en colonne sur mobile */
+        align-items: center;
+        text-align: center;
+      }
+      footer .phone {
+        order: 1; /* Numéro de téléphone en premier */
+      }
+      footer .email {
+        order: 2; /* Adresse email en deuxième */
+      }
+      footer .copyright {
+        order: 3; /* Copyrights en dernier */
+      }
+      footer .phone, footer .email, footer .copyright {
+        flex: none; /* Désactive la répartition de l'espace */
+        margin: 5px 0; /* Ajoute un espacement entre les éléments */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo AL Menuiserie Générale">
+  </header>
+  <main>
+    <h1>Le site est en construction. Revenez bientôt !</h1>
+  </main>
+  <footer>
+    <div class="phone"><a href="tel:+32489351698">📞 +32 489 35 16 98</a></div>
+    <div class="email"><a href="mailto:contact@almenuiserie.com">✉️ contact@almenuiserie.com</a></div>
+    <div class="copyright">© 2024 NSMobile. Tous droits réservés.</div>
+  </footer>
+</body>
+</html>
