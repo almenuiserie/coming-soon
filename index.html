@@ -3,7 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AL Menuiserie Générale - Coming Soon</title>
+  <title>Menuisier Expert - Bois, Châssis, Escaliers | AL Menuiserie Générale</title>
+  
+  <!-- SEO meta tags -->
+  <meta name="description" content="AL Menuiserie Générale, menuisier expert à votre service. Spécialisés dans le travail du bois, la fabrication de châssis, d'escaliers et d'autres créations sur mesure.">
+  <meta name="keywords" content="menuisier, bois, châssis, escaliers, AL Menuiserie Générale, artisan menuisier, travaux sur mesure">
+  <meta name="author" content="AL Menuiserie Générale">
+
+  <!-- Open Graph (OG) meta tags -->
+  <meta property="og:title" content="AL Menuiserie Générale - Artisan Menuisier">
+  <meta property="og:description" content="Travaux sur mesure : bois, châssis, escaliers. Contactez-nous !">
+  <meta property="og:url" content="https://almenuiserie.be">
+  <meta property="og:image" content="https://almenuiserie.be/logo.png">
+  <meta property="og:type" content="business.business">
+  <meta property="business:contact_data:locality" content="Charleroi">
+  <meta property="business:contact_data:region" content="Wallonie">
+  <meta property="business:contact_data:country" content="Belgique">
+
+  <!-- Microdonnées JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AL Menuiserie Générale",
+    "image": "https://almenuiserie.be/logo.png",
+    "@id": "",
+    "url": "https://almenuiserie.be",
+    "telephone": "+32 489 35 16 98",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": " Rue le Campinaire 82",
+      "addressLocality": "Farciennes",
+      "addressRegion": "Wallonie",
+      "postalCode": "6240",
+      "addressCountry": "BE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.4114,
+      "longitude": 4.4446
+    },
+    "sameAs": [
+      "https://www.facebook.com/p/AL-Menuiserie-100076294563997/",
+    ]
+  }
+  </script>
+
   <style>
     body {
       margin: 0;
@@ -26,6 +71,7 @@
     }
     main {
       display: flex;
+      flex-direction: column;
       flex-grow: 1;
       justify-content: center;
       align-items: center;
@@ -34,9 +80,18 @@
     }
     main h1 {
       font-size: 2rem;
-      font-weight: normal;
+      font-weight: bold;
+      color: #333;
+    }
+    main h2 {
+      font-size: 1.5rem;
       color: #555;
-      line-height: 1.4;
+      margin-top: 10px;
+    }
+    main p {
+      margin-top: 15px;
+      line-height: 1.6;
+      color: #444;
     }
     footer {
       display: flex;
@@ -47,19 +102,19 @@
       font-size: 0.9rem;
     }
     footer .phone {
-      order: 1; /* Ordre fixe pour PC */
+      order: 1;
       text-align: left;
       flex: 1;
     }
     footer .copyright {
-      order: 2; /* Ordre fixe pour PC */
+      order: 2;
       text-align: center;
       flex: 1;
       font-size: 0.8rem;
       color: #666;
     }
     footer .email {
-      order: 3; /* Ordre fixe pour PC */
+      order: 3;
       text-align: right;
       flex: 1;
     }
@@ -72,22 +127,22 @@
     }
     @media (max-width: 768px) {
       footer {
-        flex-direction: column; /* Les éléments se placent en colonne sur mobile */
+        flex-direction: column;
         align-items: center;
         text-align: center;
       }
       footer .phone {
-        order: 1; /* Numéro de téléphone en premier */
+        order: 1;
       }
       footer .email {
-        order: 2; /* Adresse email en deuxième */
+        order: 2;
       }
       footer .copyright {
-        order: 3; /* Copyrights en dernier */
+        order: 3;
       }
       footer .phone, footer .email, footer .copyright {
-        flex: none; /* Désactive la répartition de l'espace */
-        margin: 5px 0; /* Ajoute un espacement entre les éléments */
+        flex: none;
+        margin: 5px 0;
       }
     }
   </style>
@@ -97,7 +152,16 @@
     <img src="logo.png" alt="Logo AL Menuiserie Générale">
   </header>
   <main>
-    <h1>Le site est en construction. Revenez bientôt !</h1>
+    <h1>AL Menuiserie Générale</h1>
+    <h2>Artisan Menuisier à Votre Service</h2>
+    <p>Nous sommes spécialisés dans le travail du bois et la création sur mesure :</p>
+    <ul>
+      <li>Fabrication et installation de châssis en bois</li>
+      <li>Création d'escaliers élégants et durables</li>
+      <li>Conception de meubles personnalisés</li>
+      <li>Travaux de rénovation et d’aménagement intérieur</li>
+    </ul>
+    <p>Contactez-nous pour vos projets en bois, et bénéficiez de l’expertise d’un artisan local dans la région de Charleroi.</p>
   </main>
   <footer>
     <div class="phone"><a href="tel:+32489351698">📞 +32 489 35 16 98</a></div>
